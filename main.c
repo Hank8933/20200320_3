@@ -4,7 +4,7 @@ void tower(int n, char from, char to, char aux, int k)
 {
     if (n == 1)
     {
-        printf("Move disc NO.%d from rod %c to rod %c.\n", k, from, to);
+        printf("Move %s disc NO.%d from rod %c to rod %c.\n", (k%2 == 0)?"Blue":"Green", k, from, to);
         return;
     }
 
